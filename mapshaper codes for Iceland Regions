@@ -1,0 +1,33 @@
+-each 'ID = "Norðurland vestra"' where='ID=="Norðurland vestra" || ID=="5604"' \
+-dissolve ID \
+-o NorthwestIceland.shp
+[dissolve] Dissolved 12 features into 11 features
+$ -each 'ID = "Vestfirðir"' where='ID=="Vestfirðir" || ID=="4604"' \
+-dissolve ID \
+-o Westfjords.shp
+[dissolve] Dissolved 11 features into 10 features
+$ -each 'ID = "Vesturland"' where='ID=="Vesturland" || ID=="3000"' \
+-dissolve ID \
+-o WestIceland.shp
+[dissolve] Dissolved 10 features into 9 features
+$ -each 'ID = "Vesturland"' where='ID=="Vesturland" || ID=="3711"' \
+-dissolve ID \
+-o WestIceland.shp
+[dissolve] Dissolved 9 features into 8 features
+$ info
+[info] 
+=============================================
+Layer:    is50v_mork_sveitarf_svaedi_24122019
+---------------------------------------------
+Type:     polygon
+Records:  8
+Bounds:   -24.528174277439042,63.39503476353919,-13.494620623950135,66.53242709905592
+CRS:      +proj=longlat +datum=WGS84
+Source:   is50v_Iceland Regions.json
+
+Attribute data
+-------+--------------------
+ Field | First value
+-------+--------------------
+ ID    | 'Höfuðborgarsvæði'
+-------+--------------------
